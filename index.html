@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajio</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: black;
+            }
+    
+    button{
+        display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#a1{
+    height:550px;
+    width:100%;
+}
+
+/* Add hover effect styles */
+
+
+/* Add hover effect styles */
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    transform: scale(1.05); /* Scale the button slightly on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+        .button-container {
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+            function amazon()
+            {
+                alert(" welcome to Ajio");
+            }
+            amazon();
+        </script>
+
+        <img id="a1" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" title="WELCOME TO AJIO">
+        <div class="button-container">
+            <form id="a2" method="post" action="account.html" ></form>
+                
+                  
+                    <center> 
+                        <p>Click Here To Continue</p>
+                        <form>
+                            <button type="button" onclick="create()" id="t1">create a account </button>
+                            <button type="button" onclick="login()" id="s1">Login</button>
+                        </center>
+                        
+                        <script>
+                        function create() {
+                            window.location.href="account.html";
+                        
+                        }
+                        
+                        function login() {
+                           window.location.href="login.html";
+                        }
+                        </script>
+
+                    </form> 
+        </div>
+                 
+    </body>
+</html>

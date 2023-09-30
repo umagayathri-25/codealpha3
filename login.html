@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="register.css" rel="stylesheet" type="text/css">
+</head>
+<body><style>
+
+    input[type="submit"]{
+    background-color: #007bff;
+    border:#fff;
+    border: none;
+    padding: 10px;
+}
+label{
+    font-size:18px;
+}
+label:hover{
+    color:red;
+}
+#Name:hover{
+    background-color: aqua;
+    border-color: rgb(103, 18, 82);
+}
+#Phoneno:hover{
+    background-color: aqua;
+    border-color: rgb(103, 18, 82);
+}
+#EmailId:hover{
+    background-color: aqua;
+    border-color: rgb(103, 18, 82);
+}
+#EmailId{
+    margin: auto;
+    width:400px;
+    height: 50px;
+    border:1px solid silver;
+
+}
+#Password:hover{
+    background-color: aqua;
+    border-color: rgb(103, 18, 82);
+}
+#button:hover{
+background-color: red;
+}
+#Phoneno{
+    margin: auto;
+    width:400px;
+    height: 50px;
+    border:1px solid silver;
+}
+#Name{
+    margin-right: auto;
+    width:400px;
+    height: 50px;
+    border:1px solid silver;
+}
+#Password{
+    margin: auto;
+   width:400px;
+   height: 50px;
+   border:1px solid silver;
+    
+
+}
+.filed{
+    width:300px;
+    margin: 0 auto;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+</style>
+
+    <form id="myform" onsubmit="return validateForm" action="sucess1.html" method="post">
+        <center>
+                   <h2>AJIO</h2>
+                <h1>Login</h1>
+        <div class="field">
+    <label for="Firstname">Name:</label>
+     <input type="text" id="Name" name="fname" placeholder="please enter name" required><br><br>
+    <label for="Phoneno">Phoneno:</label>
+    <input type="number" id="Phoneno"  name="pno" placeholder="enter your number" required><br><br>
+    <label for="EmailId">EmailId:</label>
+    <input type="email" id="EmailId" name="email"placeholder="please enter email-Id" required><br><br>
+    <label for="Password">Password:</label>
+    <input type="password" id="Password" name="passw"placeholder="please enter Password" required><br><br>
+    </div>
+    <input type="submit" id="button" value="Submit">
+        </center>
+</form>
+<div id="error-message" style="color:red";></div>
+</form>
+</body>
+</html>

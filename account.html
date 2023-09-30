@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:white;
+            color:black;
+        }
+        .container {width: 300px;
+            margin: 0 auto;
+            margin-top: -500px;
+            margin-left: 20px;
+
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #em{ width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            border: none;
+            background-color: black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #add1{
+            height: 40px;
+            width: 350px;
+
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    padding-bottom:3px;
+}
+
+
+#add1:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+#a1{
+    height:500px;
+            width: 800px;
+            margin-left:450px;
+            margin-top: 20px;
+}
+h2{
+    color:darkblue;
+}
+    </style>
+</head>
+<body>
+    <img id="a1" src="https://assets.ajio.com/static/img/Ajio-Logo.svg">
+   
+    <div class="container">
+       <h2 >Create Account</h2>
+        <form action="login.html" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="enter ur name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  placeholder="enter ur email"required>
+            </div>
+            <div class="form-group">
+                <label for="phnpo">Phoneno:</label>
+                <input type="number" id="em" name="ph" pattern="[0-9]*"placeholder="enter ur phoneno" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"  placeholder="enter ur username"required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="enter ur password"required>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="add1" value="Create Account">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
